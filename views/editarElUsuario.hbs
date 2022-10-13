@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="text-center m-5">
+      <hr>
+      <h1>
+          {{ titulo }}
+      </h1>
+      <hr>
+  </div>
+
+  <div class="row">
+    <form action="/editarUsuario/{{id}}" method="post">
+      <div class="mb-3 row">
+        <label for="nombre" class="col-sm-2 col-form-label">Nombre: </label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="nombre" id="nombre" value={{nombre}}>
+        </div>
+      </div>
+  
+      <div class="mb-3 row">
+        <label for="email" class="col-sm-2 col-form-label">Email: </label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" name="email" id="email" value={{email}}>
+        </div>
+      </div>
+  
+  
+      <div class="mb-8 text-center">
+         <input type="submit" class="btn btn-lg btn-primary w-50 p-2" value="Editar">
+      </div>
+
+
+      </div>
+    </form>
+  </div>
+
+</div>
+
+
+
+
+
+
+
